@@ -1,7 +1,7 @@
-// Making sure the page is ready
-$(document).ready(function() {
+//Making sure the page is ready
+ $(document).ready(function() {
     alert("Welcome to StarTrackr! Now no longer under police investigation!");
-});
+ });
 
 // // Testing our selection
 // $(document).ready(function() {
@@ -109,4 +109,22 @@ $('#navigation li').hover(function() {
     $(this).animate({paddingLeft: '+=15px'}, 200);
 }, function() {
     $(this).animate({paddingLeft: '-=15px'}, 200);
+});
+
+//Easing
+ $(document).ready(function(){
+     $('p:first').toggle(function() {
+       $(this).animate( {'height':'+=150px'}, 2000, 'linear')
+     }, function() {
+       $(this).animate( {'height':'-=150px'}, 2000, 'swing');
+     });
+ });
+
+  
+$('#bio > div').hide();
+$('#bio > div:first').show();
+$('#bio h3').click(function() {
+    $(this).next().animate(
+        {'height':'toggle'}, 'slow', 'easeOutBounce'
+    );
 });
