@@ -79,3 +79,20 @@ td {
 	padding: 6px;
 }
 
+#bio h3 {
+	background-color: #94C5EB;
+	padding: 5px;
+	margin: 2px;
+}
+
+#bio div {
+	background-color: aquamarine;
+}
+
+#bio div img {
+	padding: 5px;
+}
+
+#bio div p {
+	display: inline;
+}
