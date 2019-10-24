@@ -105,7 +105,7 @@ $('.revealer').click(function() {
 });
 
 //Animating navigation
-$('#navigation li').hover(function() {
+$('.topnav a').hover(function() {
     $(this).animate({paddingLeft: '+=15px'}, 200);
 }, function() {
     $(this).animate({paddingLeft: '-=15px'}, 200);
@@ -128,3 +128,15 @@ $('#bio h3').click(function() {
         {'height':'toggle'}, 'slow', 'easeOutBounce'
     );
 });
+
+//Navagtion bars
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
