@@ -26,6 +26,28 @@ header {
 	height: 100px;
 }
 
+footer {
+	position: absolute;
+	bottom: 0px;
+	max-width: 100%;
+	background-color: #333;
+	height: 100px;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}
+
+footer ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+i.fab.fa-facebook-square {
+	font-size: 35px;
+}
+
+
+
 header h1 {
 	padding-top: 50px;
 	background-color: lightgray;
@@ -69,10 +91,11 @@ td {
 	padding: 5px;
 }
 
-td {
+tr {
 	background-color: lightsteelblue;
-	color: white;
+	color: white; 
 }
+
 
 
 /* Navagation */

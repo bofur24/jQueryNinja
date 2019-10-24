@@ -13,33 +13,35 @@
  
  });
 
-// // Filter for zebra stripes
-// $(document).ready(function() {
-//     alert($('#celebs tbody tr:even').length + ' elements!');
-// });
-
-// Selector filers :odd, :first, :last, :eq
-
-// // Reading CSS properties
-// $(document).ready(function() {
-//     var fontSize = $('#celebs tbody tr:first').css('font-size');
-//     alert('Font size of the first row is ' + fontSize);
-// });
-
 // Setting CSS properties with object literal
-// $(document).ready(function() {
-//     $('#celebs tbody tr:even').css(
-//     {'background-color':'#dddddd',
-//      'color':'#666666',   
-//      'font-size': '11pt',
-//      'line-height': '2.5em'
-//     });
-// });
+$('#btn3').click(function() {
+    $(document).ready(function() {
+        $('.person tbody tr:even').css(
+        {'background-color':'#dddddd',
+         'color':'#666666',   
+         'font-size': '11pt',
+         'line-height': '2.5em'
+        });
+    });
+});
+
 
 // Adding and removing classes .addClass & .removeClass
-$(document).ready(function() {
-    $('#celebs tbody tr:even').addClass('zebra');
+$('#btn4').click(function() {
+    $(document).ready(function() {
+        $('.person tbody tr:odd').addClass('zebra');
+    });
+
 });
+
+//Highlighting when hovering
+ $('.person tbody tr').mouseover(function() {
+    $(this).addClass('zebraHover');
+ });
+
+ $('.person tbody tr').mouseout(function() {
+     $(this).removeClass('zebraHover');
+ });
 
 // //Hiding and revealing Elements
 // $('#hideButton').click(function() {
@@ -81,14 +83,7 @@ $('#no-script').remove();
 // .fadIn('slow') .fadOut('fast')
 
 
-//Highlighting when hovering
-// $('#celebs tbody tr').mouseover(function() {
-//     $(this).addClass('zebraHover');
-// });
 
-// $('#celebs tbody tr').mouseout(function() {
-//     $(this).removeClass('zebraHover');
-// });
 
 $('#celebs tbody tr').hover(function() {
     $(this).addClass('zebraHover');
