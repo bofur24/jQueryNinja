@@ -10,9 +10,78 @@ body {
 	font-size: 12px;
 }
 
+p {
+	font-size: 15px;
+}
+
+h2 {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+header {
+	background-color: #333;
+	text-align: center;
+	padding: 10px;
+	height: 100px;
+}
+
+header h1 {
+	padding-top: 50px;
+	background-color: lightgray;
+	color: black;
+	width: 500px;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.container {
+	max-width: 80%;
+	background: lightgray;
+	margin: 10px auto;
+	padding: 10px;
+	border: 3px solid #000;	
+	border-radius: 5px;
+}
+
+.btn {
+	background-color: lightsteelblue;
+	width: 75px;
+	height: 25px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	color: white;
+}
+
+.btn:hover {
+	background-color: #4CAF50;
+
+}
+
+table {
+	border-radius: 5px;
+}
+
+table,
+td {
+	border: 1px solid #000;
+	margin: 5px;
+	padding: 5px;
+}
+
+td {
+	background-color: lightsteelblue;
+	color: white;
+}
+
+
+/* Navagation */
 .topnav {
 	overflow: hidden;
 	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
   }
   
   .topnav a {
@@ -38,12 +107,21 @@ body {
   .topnav .icon {
 	display: none;
   }
+
+  /* Media Querys */
   
   @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
 	  float: right;
 	  display: block;
+	}
+	h2 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 12px;
 	}
   }
   

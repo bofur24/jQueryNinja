@@ -9,21 +9,56 @@
 </head>
 <body>
 
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div>
-
+    <nav class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <header>
+        <h1>jQuery: Novice to Ninja Practice Files</h1>
+    </header>
+    <section class="container">
+        <h2>Making Sure the page is ready</h2>
+        <p>Click the button to check if the page is ready</p>
+        <button id="btn1" class="btn" type="button">Show</button>
+    </section>
+    <section class="container">
+        <h2>Testing our selection</h2>
+        <p>Click the button to check the selection in the table</p>
+        <button id="btn2" class="btn">Show</button>
+        <table class="person">
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Street</td>
+                    <td>Telephone</td>
+                </tr>
+                <tr>
+                    <td>Keith</td>
+                    <td>614 W Seminole</td>
+                    <td>580-574-4267</td>
+                </tr>
+                <tr>
+                    <td>Danny</td>
+                    <td>2nd</td>
+                    <td>580-555-5555</td>
+                </tr>
+                <tr>
+                    <td>Mike</td>
+                    <td>1st</td>
+                    <td>555-555-5555</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/practice_script.js"></script>
 
 </body>

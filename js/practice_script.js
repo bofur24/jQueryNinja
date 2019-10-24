@@ -1,12 +1,17 @@
-//Making sure the page is ready
- $(document).ready(function() {
-    alert("Welcome to StarTrackr! Now no longer under police investigation!");
- });
+ //Making sure the page is ready
+  $('#btn1').click(function() {
+      $(document).ready(function() {
+        alert("Welcome to jQuery: Novice to Ninja Practice Page.");
+      });     
+  });
 
-// // Testing our selection
-// $(document).ready(function() {
-//     alert($('#celebs tbody tr').length + ' elements!');
-// });
+ // Testing our selection
+ $('#btn2').click(function() {
+    $(document).ready(function() {
+        alert($('.person tbody tr').length + ' rows in the table!');
+    });
+ 
+ });
 
 // // Filter for zebra stripes
 // $(document).ready(function() {
@@ -104,21 +109,14 @@ $('.revealer').click(function() {
     $(this).next().fadeIn();
 });
 
-//Animating navigation
-$('.topnav a').hover(function() {
-    $(this).animate({paddingLeft: '+=15px'}, 200);
-}, function() {
-    $(this).animate({paddingLeft: '-=15px'}, 200);
-});
-
 //Easing
- $(document).ready(function(){
-     $('p:first').toggle(function() {
-       $(this).animate( {'height':'+=150px'}, 2000, 'linear')
-     }, function() {
-       $(this).animate( {'height':'-=150px'}, 2000, 'swing');
-     });
- });
+//  $(document).ready(function(){
+//      $('p:first').toggle(function() {
+//        $(this).animate( {'height':'+=150px'}, 2000, 'linear')
+//      }, function() {
+//        $(this).animate( {'height':'-=150px'}, 2000, 'swing');
+//      });
+//  });
 
   
 $('#bio > div').hide();
@@ -129,6 +127,11 @@ $('#bio h3').click(function() {
     );
 });
 
+
+/**********************/
+/* Navagtion Scripts */
+/********************/
+
 //Navagtion bars
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -138,5 +141,12 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+  //Animating navigation
+$('.topnav a').hover(function() {
+    $(this).animate({paddingLeft: '+=15px'}, 200);
+}, function() {
+    $(this).animate({paddingLeft: '-=15px'}, 200);
+});
 
 
