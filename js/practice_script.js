@@ -43,36 +43,43 @@ $('#btn4').click(function() {
      $(this).removeClass('zebraHover');
  });
 
-// //Hiding and revealing Elements
-// $('#hideButton').click(function() {
-//     $('#disclaimer').hide();
-// });
+//  //hiding and revealing Elements
+//  $('#btn5').click(function() {
+//      if ($('#disclaimer').is('visible')) {
+//          $('#disclaimer').hide();
+//      } else {
+//          $('#disclaimer').show();
+//      }
+//  });
+
+//Hiding and revealing Elements
+//  $('#btn5').click(function() {
+//      $('#disclaimer').hide();
+//  });
 
 // $('#showButton').click(function() {
 //     $('#disclaimer').show();
 // });
 
 
-// // Adding new elements
-// $('<input type="button" value="Hide" id="toggleButton">')
-//     .insertAfter('#disclaimer');
-// $('#toggleButton').click(function() {
-//     $('#disclaimer').toggle();
-//     if ($('#disclaimer').is(':visible')) {
-//         $(this).val('Hide');
-//     } else {
-//         $(this).val('Show');
-//     }
-// });
+// Adding new elements
+ $('#btn5').click(function() {
+     $('#disclaimer').toggle();
+     if ($('#disclaimer').is(':visible')) {
+         $(this).val('Hide');
+     } else {
+         $(this).val('Show');
+     }
+ });
 
-// Adding new elements slidetoggle & fadeout button
-$('<input type="button" value="Hide" id="hideButton">')
-    .insertAfter('#disclaimer');
-$('#hideButton').click(function() {
-    $('#disclaimer').slideToggle('slow', function() {
-        $('#hideButton').fadeOut();
-    });
-});
+// // Adding new elements slidetoggle & fadeout button
+// $('<input type="button" value="Hide" id="hideButton">')
+//     .insertAfter('#disclaimer');
+// $('#hideButton').click(function() {
+//     $('#disclaimer').slideToggle('slow', function() {
+//         $('#hideButton').fadeOut();
+//     });
+// });
 
 //Removing existing elements
 $('#no-script').remove();
