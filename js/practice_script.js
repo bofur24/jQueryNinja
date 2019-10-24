@@ -43,82 +43,55 @@ $('#btn4').click(function() {
      $(this).removeClass('zebraHover');
  });
 
-//  //hiding and revealing Elements
-//  $('#btn5').click(function() {
-//      if ($('#disclaimer').is('visible')) {
-//          $('#disclaimer').hide();
-//      } else {
-//          $('#disclaimer').show();
-//      }
-//  });
-
-//Hiding and revealing Elements
-//  $('#btn5').click(function() {
-//      $('#disclaimer').hide();
-//  });
-
-// $('#showButton').click(function() {
-//     $('#disclaimer').show();
-// });
-
-
-// Adding new elements
+ // Adding new elements
  $('#btn5').click(function() {
-     $('#disclaimer').toggle();
-     if ($('#disclaimer').is(':visible')) {
-         $(this).val('Hide');
-     } else {
-         $(this).val('Show');
-     }
- });
-
-// // Adding new elements slidetoggle & fadeout button
-// $('<input type="button" value="Hide" id="hideButton">')
-//     .insertAfter('#disclaimer');
-// $('#hideButton').click(function() {
-//     $('#disclaimer').slideToggle('slow', function() {
-//         $('#hideButton').fadeOut();
-//     });
-// });
-
-//Removing existing elements
-$('#no-script').remove();
-
-
-// Fading in and Out
-// .fadIn() .fadOut()
-// .fadIn('slow') .fadOut('fast')
-
-
-
-
-$('#celebs tbody tr').hover(function() {
-    $(this).addClass('zebraHover');
-}, function() {
-    $(this).removeClass('zebraHover')
+    $('#disclaimer').toggle();
+    if ($('#disclaimer').is(':visible')) {
+        $(this).val('Hide');
+    } else {
+        $(this).val('Show');
+    }
 });
 
-$('#celebs tbody tr').click(function() {
-    $(this).toggleClass('zebraHover');
+// Adding new elements slidetoggle & fadeout button
+ $('<input type="button" class="btn" value="Hide" id="btn6">')
+     .insertAfter('#disclaimer1');
+ $('#btn6').click(function() {
+     $('#disclaimer1').slideToggle('slow', function() {
+        $('#btn6').fadeOut();
+     });
 });
 
 //Spoiler and revealer
 $('.spoiler').hide();
-$('<input type="button" class="revealer" value="Tell Me!" >')
+$('<input type="button" class="btnhide" value="Tell Me!" >')
     .insertBefore('.spoiler');
-$('.revealer').click(function() {
+$('.btnhide').click(function() {
     $(this).hide();
     $(this).next().fadeIn();
 });
+$('#btn7').click(function() {
+    $('.animate').animate ({
+        padding: '20px',
+        fontSize: '30px'
+    }, 2000);
+});
+
+$('#btn8').click(function() {
+    $('#animatehide').animate({
+        opacity: 'hide',
+        height: 'hide'
+    }, 'slow');
+});
 
 //Easing
-//  $(document).ready(function(){
-//      $('p:first').toggle(function() {
-//        $(this).animate( {'height':'+=150px'}, 2000, 'linear')
-//      }, function() {
-//        $(this).animate( {'height':'-=150px'}, 2000, 'swing');
-//      });
-//  });
+  $(document).ready(function(){
+      $('p:first').toggle(function() {
+        $(this).animate( {'height':'+=150px'}, 2000, 'linear')
+      }, function() {
+        $(this).animate( {'height':'-=150px'}, 2000, 'swing');
+      });
+  });
 
   
 $('#bio > div').hide();
